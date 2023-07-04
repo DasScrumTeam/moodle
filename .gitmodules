@@ -1,0 +1,3 @@
+[submodule "theme/dstheme"]
+	path = theme/dstheme
+	url = git@github.com:DasScrumTeam/dst_theme
