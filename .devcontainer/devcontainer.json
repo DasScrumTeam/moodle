@@ -1,0 +1,16 @@
+{
+  "customizations": {
+    "codespaces": {
+      "repositories": {
+        "DasScrumTeam/dst_theme": {
+          "permissions": "write-all"
+        }
+      }
+    }
+  },
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [8080, 5432],
+
+  "postCreateCommand": "pip install moodle-sdk --user && mdk create --install --version 24 --engine pgsql --run dev users"
+}
